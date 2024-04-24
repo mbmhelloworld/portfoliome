@@ -7,7 +7,7 @@ $notifications_latest = optional($notifications)->take(5);
 <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
     <div class="sidebar-header border-bottom">
         <div class="sidebar-brand d-sm-flex justify-content-center">
-            <img class="sidebar-brand-full" src="{{ asset('img/logo-with-text.jpg') }}" alt="{{ app_name() }}"
+            <img class="sidebar-brand-full" src="{{ asset('img/logo.jpg') }}" alt="{{ app_name() }}"
                 height="46">
             <img class="sidebar-brand-narrow" src="{{ asset('img/logo-square.jpg') }}" alt="{{ app_name() }}"
                 height="46">
@@ -30,7 +30,7 @@ $notifications_latest = optional($notifications)->take(5);
                 @endif
             </a>
         </li>
-        
+
         @can('view_posts')
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('backend.posts.index') }}">

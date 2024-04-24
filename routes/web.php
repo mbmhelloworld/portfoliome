@@ -22,6 +22,12 @@ require __DIR__.'/auth.php';
 * --------------------------------------------------------------------
 */
 
+//Route::get('test', 'test.php');
+Route::get('test', function()
+{
+    include __DIR__ . '/../test.php';
+});
+
 // home route
 Route::get('home', [FrontendController::class, 'index'])->name('home');
 
@@ -31,6 +37,7 @@ Route::get('language/{language}', [LanguageController::class, 'switch'])->name('
 Route::get('dashboard', 'App\Http\Controllers\Frontend\FrontendController@index')->name('dashboard');
 
 // pages
+Route::get('contact', [FrontendController::class, 'contact'])->name('contact');
 Route::get('terms', Terms::class)->name('terms');
 Route::get('privacy', Privacy::class)->name('privacy');
 

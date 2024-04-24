@@ -1,7 +1,7 @@
 <nav class="border-2 border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-900">
     <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
         <a class="flex items-center space-x-3 rtl:space-x-reverse" href="/">
-            <img class="h-9" src="{{ asset('img/logo-with-text.jpg') }}" alt="{{ app_name() }} Logo" />
+            <img class="h-9" src="{{ asset('img/logo.jpg') }}" alt="{{ app_name() }} Logo" />
         </a>
         <div class="flex items-center justify-end space-x-1 rtl:space-x-reverse md:order-2 md:space-x-0">
             <button
@@ -22,16 +22,6 @@
             <button
                 class="inline-flex cursor-pointer items-center justify-center rounded px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
                 data-dropdown-toggle="language-dropdown-menu" type="button">
-                <svg class="icon icon-tabler icons-tabler-outline icon-tabler-language"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M4 5h7" />
-                    <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
-                    <path d="M5 9c0 2.144 2.952 3.908 6.7 4" />
-                    <path d="M12 20l4 -9l4 9" />
-                    <path d="M19.1 18h-6.2" />
-                </svg>
                 <span class="ms-2 hidden sm:block">
                     {{ strtoupper(app()->currentLocale()) }}
                 </span>
@@ -218,7 +208,7 @@
                     <x-frontend.nav-item :href="route('frontend.tags.index')" :active="request()->routeIs('frontend.tags.*')">
                         {{ __('Tags') }}
                     </x-frontend.nav-item>
-                    <x-frontend.nav-item href="https://nasirkhn.com" target="_blank">
+                    <x-frontend.nav-item :href="route('contact')" :active="request()->routeIs('contact')">
                         {{ __('Contact') }}
                     </x-frontend.nav-item>
                 </ul>

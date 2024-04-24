@@ -27,6 +27,16 @@ class FrontendController extends Controller
     }
 
     /**
+     * contactform
+     *
+     * @return \Illuminate\Contracts\View\View
+     */
+    public function contact()
+    {
+        return view('frontend.contact');
+    }
+
+    /**
      * Terms & Conditions Page.
      *
      * @return \Illuminate\Contracts\View\View
