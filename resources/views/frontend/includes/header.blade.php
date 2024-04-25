@@ -200,13 +200,10 @@
                         {{ __('Home') }}
                     </x-frontend.nav-item>
                     <x-frontend.nav-item :href="route('frontend.posts.index')" :active="request()->routeIs('frontend.posts.*')">
-                        {{ __('Posts') }}
+                        {{ __('Blog') }}
                     </x-frontend.nav-item>
-                    <x-frontend.nav-item :href="route('frontend.categories.index')" :active="request()->routeIs('frontend.categories.*')">
-                        {{ __('Categories') }}
-                    </x-frontend.nav-item>
-                    <x-frontend.nav-item :href="route('frontend.tags.index')" :active="request()->routeIs('frontend.tags.*')">
-                        {{ __('Tags') }}
+                    <x-frontend.nav-item :href="route('projects')" :active="request()->routeIs('projects')">
+                        {{ __('Projects') }}
                     </x-frontend.nav-item>
                     <x-frontend.nav-item :href="route('contact')" :active="request()->routeIs('contact')">
                         {{ __('Contact') }}

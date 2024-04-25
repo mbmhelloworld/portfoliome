@@ -37,6 +37,16 @@ class FrontendController extends Controller
     }
 
     /**
+     * Projects
+     *
+     * @return \Illuminate\Contracts\View\View
+     */
+    public function projects()
+    {
+        return view('frontend.projects');
+    }
+
+    /**
      * Terms & Conditions Page.
      *
      * @return \Illuminate\Contracts\View\View

@@ -7,9 +7,9 @@
 @section('content')
     <x-frontend.header-block :title="__('Articles')">
         <p class="mb-8 leading-relaxed">
-            We publish articles on a number of topics.
+            Lorem Ipsum dolor Lorem Ipsum dolorLorem Ipsum dolorLorem Ipsum dolorLorem Ipsum dolor
             <br>
-            We encourage you to read our posts and let us know your feedback. It would be really help us to move forward.
+            Lorem Ipsum dolorLorem Ipsum dolorLorem Ipsum dolorLorem Ipsum dolorLorem Ipsum dolor
         </p>
     </x-frontend.header-block>
 
