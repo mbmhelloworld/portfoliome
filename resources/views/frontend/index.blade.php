@@ -24,15 +24,15 @@
                     const textBox = document.querySelector("#type-text")
                     await sleep(900)
                     textBox.innerText = ""
-                    await textBox.type('Hey, ')
+                    await textBox.type('Hey, ich bin ')
 
                     while (true) {
-                        await textBox.type('ich bin Moritz!')
+                        await textBox.type('Moritz!')
                         await sleep(1800)
-                        await textBox.delete('ich bin Moritz!')
-                        await textBox.type('ich bin Webentwickler!')
+                        await textBox.delete('Moritz!')
+                        await textBox.type('Webentwickler!')
                         await sleep(1800)
-                        await textBox.delete('ich bin Webentwickler!')
+                        await textBox.delete('Webentwickler!')
                     }
                 }
                 const sleep = time => new Promise(resolve => setTimeout(resolve, time))

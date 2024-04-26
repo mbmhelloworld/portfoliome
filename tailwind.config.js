@@ -1,5 +1,6 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
+const colors = require('tailwindcss/colors')
 
 export default {
     content: [
@@ -10,13 +11,13 @@ export default {
         "./node_modules/flowbite/**/*.js"
     ],
 
-    // theme: {
-    //     extend: {
-    //         fontFamily: {
-    //             sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-    //         },
-    //     },
-    // },
+    theme: {
+        extend: {
+            colors: {
+                ...colors
+            }
+        }
+    },
 
-    plugins: [forms, require('flowbite/plugin')],
+    plugins: [require('flowbite/plugin'), forms],
 };
